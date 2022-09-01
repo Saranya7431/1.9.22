@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void fact(int);
+int main()
+{
+	int n;
+	printf("Enter any number\n");
+	scanf("%d",&n);
+	fact(n);
+	return 0;
+}
+void fact(int n)
+{
+	int cnt,fact=1;
+	for(cnt=1;cnt<=n;cnt++)
+	   fact=fact*cnt;
+	   printf("Factorial of %d is %d",n,fact);
+}
